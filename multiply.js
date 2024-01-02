@@ -29,28 +29,17 @@ function setGame() {
             let tile = document.createElement("div");
             tile.id = r.toString() + "-" + c.toString();
             let num = board[r][c];
-            updateTile(tile, num);
+            updateTile(tile);
             document.getElementById("board").append(tile);
         }
     }
-    //create 2 to begin the game
-    setTwo();
-    setTwo();
 
 }
 
-function updateTile(tile, num) {
+function updateTile(tile) {
     tile.innerText = "";
     tile.classList.value = ""; //clear the classList
     tile.classList.add("tile");
-    if (num > 0) {
-        tile.innerText = num.toString();
-        if (num <= 4096) {
-            tile.classList.add("x"+num.toString());
-        } else {
-            tile.classList.add("x8192");
-        }                
-    }
 }
 
 document.addEventListener('keyup', (e) => {
