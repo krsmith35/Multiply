@@ -23,6 +23,8 @@ function setGame() {
             board[r][c] = Math.floor(Math.random()*11+1);
         }
     }
+    var tst = Math.floor(Math.random()*11+1);
+    console.log(tst);
     console.log(board[2][0]);
     
     for (let r = 0; r < rows; r++) {
