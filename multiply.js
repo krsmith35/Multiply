@@ -3,7 +3,7 @@ var score = 0;
 var rows = 5;
 var columns = 5;
 
-window.onload = function() {
+document.onload = function() {
     setGame();
 }
 
