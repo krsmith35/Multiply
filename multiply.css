@@ -8,8 +8,8 @@ hr {
 }
 
 #board {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
 
     background-color: #cdc1b5;
     border: 6px solid #bbada0;
@@ -29,11 +29,14 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #eee4da;
+    color: #727371;
 }
 
 
 /* colored tiles */
-
+/*
 .x2 {
     background-color: #eee4da;
     color: #727371;
@@ -98,3 +101,4 @@ hr {
     background-color: #ff2020;
     color: white;
 }
+*/
