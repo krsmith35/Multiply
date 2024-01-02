@@ -3,8 +3,11 @@ var score = 0;
 var rows = 5;
 var columns = 5;
 
-document.onload = function() {
-    setGame();
+
+function updateTile(tile) {
+    tile.innerText = "";
+    tile.classList.value = ""; //clear the classList
+    tile.classList.add("tile");
 }
 
 function setGame() {
@@ -39,10 +42,8 @@ function setGame() {
 
 }
 
-function updateTile(tile) {
-    tile.innerText = "";
-    tile.classList.value = ""; //clear the classList
-    tile.classList.add("tile");
+document.onload = function() {
+    setGame();
 }
 
 document.addEventListener('keyup', (e) => {
