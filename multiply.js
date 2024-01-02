@@ -20,8 +20,6 @@ function setGame() {
     //assign random numbers between 1 and 12
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
-            let tile = document.createElement("div");
-            tile.id = r.toString() + "-" + c.toString();
             board[r][c] = Math.floor(Math.random()*11+1);
         }
     }
